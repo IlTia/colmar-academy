@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
-    <link rel="stylesheet" href="/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./resources/reset.css" type="text/css">
+    <link rel="stylesheet" href="./resources/style.css" type="text/css">
   </head>
   <body>
     <header>
       <div class="logo">
-
+        <img src="./resources/images/ic-logo.svg" alt="">
+        <p class="desktop">COLMAR<span>ACADEMY</span></p>
       </div>
-      <nav>
+      <nav class="desktop">
         <ul>
           <li>On Campus</li>
           <li>Online</li>
@@ -19,109 +20,140 @@
           <li>Sign In</li>
         </ul>
       </nav>
+      <nav class="mobile">
+        <img src="./resources/images/ic-on-campus.svg" alt="">
+        <img src="./resources/images/ic-online.svg" alt="">
+        <img src="./resources/images/ic-login.svg" alt="">
+      </nav>
     </header>
     <div class="banner">
       <div class="image-container">
-        <img src="" alt="">
+        <img src="./resources/images/banner.jpg" alt="Academy presentation">
       </div>
       <div class="claim">
-        <h2>Learn something new everyday</h2>
-        <p>Lorem Ipsum</p>
+        <div class="cta"><h2>Learn something new everyday</h2></div>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
         <div class="button">
           <span>Start Here</span>
         </div>
       </div>
     </div>
     <div class="information">
-      <div class="quote">
-        <img src="" alt=""> <!--bisogna creare un selettore che becchi direttmente questa immagine-->
+      <div class="image-container">
+        <img src="./resources/images/information-main.jpg" alt="Information section"> <!--bisogna creare un selettore che becchi direttmente questa immagine-->
         <h2>It doesn't hurt to keep practicing</h2>
-        <p></p>
+        <p>&quot;Nam vitae dolor libero. Nulla vitae sapien vel tortor feugiat dignissim. Donec at quam nibh.
+           Pellentesque vitae erat non magna fringilla euismod sed auctor metus.&quot;</p>
         <span>Emanuel, Sr Strategist at Hiring.com</span>
       </div>
-      <div class="info">
-        <img src="" alt=""><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-        <h4>Orientation Date</h4>
-        <p>Tue 10/11 &amp; Wed 10/12: 8am - 3pm</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="info">
-        <img src="" alt=""><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-        <h4>Our Campus</h4>
-        <p></p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="info">
-        <img src="" alt=""><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-        <h4>Our guest lecture</h4>
-        <p></p>
-        <a href="#">Learn more</a>
+      <div class="content">
+        <div class="info">
+          <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Orientation dates"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
+          <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation dates">
+          <div class="text">
+            <h4>Orientation Date</h4>
+            <p>Tue 10/11 &amp; Wed 10/12: 8am - 3pm</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="info">
+          <img class="desktop" src="./resources/images/information-campus.jpg" alt="Campus information"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
+          <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Campus information">
+          <div class="text">
+            <h4>Our Campus</h4>
+            <p>Find which campus is close by you</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="info">
+          <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture information"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
+          <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Campus information">
+          <div class="text">
+            <h4>Our guest lecture</h4>
+            <p>Join a keynote with Oliver Sack <br> about music in medical treatment</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="courses">
       <h2>Start learning</h2>
-      <div class="course">
-        <img src="" alt="">
-        <h3>Software Engineering</h3>
-        <p>COURSES</p>
-        <p></p>
-      </div>
-      <div class="course">
-        <img src="" alt="">
-        <h3>Computer Art</h3>
-        <p>COURSES</p>
-        <p></p>
-      </div>
-      <div class="course">
-        <img src="" alt="">
-        <h3>Design</h3>
-        <p>COURSES</p>
-        <p></p>
-      </div>
-      <div class="course">
-        <img src="" alt="">
-        <h3>Data</h3>
-        <p>COURSES</p>
-        <p></p>
-      </div>
-      <div class="course">
-        <img src="" alt="">
-        <h3>Business</h3>
-        <p>COURSES</p>
-        <p></p>
-      </div>
-      <div class="course">
-        <img src="" alt="">
-        <h3>Marketing</h3>
-        <p>COURSES</p>
-        <p></p>
+      <div class="courses-presentation">
+        <div class="course">
+          <img src="./resources/images/course-software.jpg" alt="Software Engineering Courses">
+          <h4>Software Engineering</h4>
+          <span>COURSES</span>
+          <p>Web Development, Mobile Development, iOT, APIs</p>
+        </div>
+        <div class="course">
+          <img src="./resources/images/course-computer-art.jpg" alt="Computer Art Courses">
+          <h4>Computer Art</h4>
+          <span>COURSES</span>
+          <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+        </div>
+        <div class="course">
+          <img src="./resources/images/course-design.jpg" alt="Design Courses">
+          <h4>Design</h4>
+          <span>COURSES</span>
+          <p>User Experience Design, User Research, Visual Design</p>
+        </div>
+        <div class="course">
+          <img src="./resources/images/course-data.jpg" alt="Data Course">
+          <h4>Data</h4>
+          <span>COURSES</span>
+          <p>Data Science, Big Data, SQL, Data Visualization</p>
+        </div>
+        <div class="course">
+          <img src="./resources/images/course-business.jpg" alt="Business Courses">
+          <h4>Business</h4>
+          <span>COURSES</span>
+          <p>Product Development, Business Development, Startup</p>
+        </div>
+        <div class="course">
+          <img src="./resources/images/course-marketing.jpg" alt="Marketing Courses">
+          <h4>Marketing</h4>
+          <span>COURSES</span>
+          <p>Analytics, Content Marketing, Mobile Marketing</p>
+        </div>
       </div>
     </div>
-    <div class="Thesis">
+    <div class="thesis">
       <h2>Thesis Exhibit</h2>
-      <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-
-      </video>
-      <div class="info">
-        <img src="" alt=""><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-        <h4>Fisma</h4><!--bisogna creare un link per tutto il box?-->
-        <p></p>
-        <a href="#">Learn more</a>
-      </div>
-      <div class="info">
-        <img src="" alt=""><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-        <h4>Now and then</h4><!--bisogna creare un link per tutto il box?-->
-        <p></p>
-        <a href="#">Learn more</a>
+      <div class="main">
+        <div class="image-container">
+          <video src="./resources/videos/thesis.mp4" autoplay muted>
+          </video>
+          <h4>Reimagine Urban</h4>
+          <p>Sed in ante a odio consequat commodo ut ut magna. Praesent lobortis lectus a sapien vulputate tristique.
+             Donec nec dignissim ligula. Integer dignissim turpis vitae nisl varius tempus.</p>
+        </div>
+        <div class="thesis-presentation">
+          <div class="info">
+            <img src="./resources/images/thesis-fisma.jpg" alt="Fisma Thesis Presentation"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
+            <div class="text">
+              <h4>Fisma: Design and Prototype</h4><!--bisogna creare un link per tutto il box?-->
+              <p>Designer Showcase of new product prototype</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="info">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="Now and then Thesis Presentation"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
+            <div class="text">
+              <h4>Now and then</h4><!--bisogna creare un link per tutto il box?-->
+              <p>Research study about New York</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
       <div class="copyright">
-
+        <span>&copy; 2016 Colmar Academy. All Rights Reserved</span>
       </div>
       <ul>
         <li>Terms</li>
-        <li>Policy</li>
+        <li>Privacy</li>
       </ul>
     </footer>
   </body>
