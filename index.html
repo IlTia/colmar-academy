@@ -21,6 +21,7 @@
         </ul>
       </nav>
       <nav class="mobile">
+        <img src="./resources/images/ic-logo.svg" alt="">
         <img src="./resources/images/ic-on-campus.svg" alt="">
         <img src="./resources/images/ic-online.svg" alt="">
         <img src="./resources/images/ic-login.svg" alt="">
@@ -31,16 +32,14 @@
         <img src="./resources/images/banner.jpg" alt="Academy presentation">
       </div>
       <div class="claim">
-        <div class="cta"><h2>Learn something new everyday</h2></div>
+        <h2>Learn something<br> new everyday</h2>
         <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
-        <div class="button">
-          <span>Start Here</span>
-        </div>
+        <a href="#">Start Here</a>
       </div>
     </div>
     <div class="information">
       <div class="image-container">
-        <img src="./resources/images/information-main.jpg" alt="Information section"> <!--bisogna creare un selettore che becchi direttmente questa immagine-->
+        <img src="./resources/images/information-main.jpg" alt="Information section">
         <h2>It doesn't hurt to keep practicing</h2>
         <p>&quot;Nam vitae dolor libero. Nulla vitae sapien vel tortor feugiat dignissim. Donec at quam nibh.
            Pellentesque vitae erat non magna fringilla euismod sed auctor metus.&quot;</p>
@@ -48,8 +47,8 @@
       </div>
       <div class="content">
         <div class="info">
-          <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Orientation dates"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-          <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation dates">
+          <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Orientation dates">
+          <div class="mobile"><img src="./resources/images/information-orientation-mobile.jpg" alt="Orientation dates"></div>
           <div class="text">
             <h4>Orientation Date</h4>
             <p>Tue 10/11 &amp; Wed 10/12: 8am - 3pm</p>
@@ -57,8 +56,8 @@
           </div>
         </div>
         <div class="info">
-          <img class="desktop" src="./resources/images/information-campus.jpg" alt="Campus information"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-          <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Campus information">
+          <img class="desktop" src="./resources/images/information-campus.jpg" alt="Campus information">
+          <div class="mobile"><img src="./resources/images/information-campus-mobile.jpg" alt="Campus information"></div>
           <div class="text">
             <h4>Our Campus</h4>
             <p>Find which campus is close by you</p>
@@ -66,8 +65,8 @@
           </div>
         </div>
         <div class="info">
-          <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture information"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
-          <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Campus information">
+          <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture information">
+          <div class="mobile"><img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Campus information"></div>
           <div class="text">
             <h4>Our guest lecture</h4>
             <p>Join a keynote with Oliver Sack <br> about music in medical treatment</p>
@@ -81,39 +80,51 @@
       <div class="courses-presentation">
         <div class="course">
           <img src="./resources/images/course-software.jpg" alt="Software Engineering Courses">
-          <h4>Software Engineering</h4>
-          <span>COURSES</span>
-          <p>Web Development, Mobile Development, iOT, APIs</p>
+          <div class="course-content">
+            <h4>Software Engineering</h4>
+            <p>COURSES</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-computer-art.jpg" alt="Computer Art Courses">
-          <h4>Computer Art</h4>
-          <span>COURSES</span>
-          <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          <div class="course-content">
+            <h4>Computer Art</h4>
+            <p>COURSES</p>
+            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-design.jpg" alt="Design Courses">
-          <h4>Design</h4>
-          <span>COURSES</span>
-          <p>User Experience Design, User Research, Visual Design</p>
+          <div class="course-content">
+            <h4>Design</h4>
+            <p>COURSES</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-data.jpg" alt="Data Course">
-          <h4>Data</h4>
-          <span>COURSES</span>
-          <p>Data Science, Big Data, SQL, Data Visualization</p>
+          <div class="course-content">
+            <h4>Data</h4>
+            <p>COURSES</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-business.jpg" alt="Business Courses">
-          <h4>Business</h4>
-          <span>COURSES</span>
-          <p>Product Development, Business Development, Startup</p>
+          <div class="course-content">
+            <h4>Business</h4>
+            <p>COURSES</p>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
         </div>
         <div class="course">
           <img src="./resources/images/course-marketing.jpg" alt="Marketing Courses">
-          <h4>Marketing</h4>
-          <span>COURSES</span>
-          <p>Analytics, Content Marketing, Mobile Marketing</p>
+          <div class="course-content">
+            <h4>Marketing</h4>
+            <p>COURSES</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
         </div>
       </div>
     </div>
@@ -129,17 +140,17 @@
         </div>
         <div class="thesis-presentation">
           <div class="info">
-            <img src="./resources/images/thesis-fisma.jpg" alt="Fisma Thesis Presentation"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
+            <img src="./resources/images/thesis-fisma.jpg" alt="Fisma Thesis Presentation">
             <div class="text">
-              <h4>Fisma: Design and Prototype</h4><!--bisogna creare un link per tutto il box?-->
+              <h4>Fisma: Design and Prototype</h4>
               <p>Designer Showcase of new product prototype</p>
               <a href="#">Learn more</a>
             </div>
           </div>
           <div class="info">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="Now and then Thesis Presentation"><!--bisogna creare un selettore che becchi direttmente questa immagine-->
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="Now and then Thesis Presentation">
             <div class="text">
-              <h4>Now and then</h4><!--bisogna creare un link per tutto il box?-->
+              <h4>Now and then</h4>
               <p>Research study about New York</p>
               <a href="#">Learn more</a>
             </div>

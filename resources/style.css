@@ -1,7 +1,40 @@
 /*Universal style*/
 
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Alegreya Sans Light Italic'), local('AlegreyaSans-LightItalic'), url(https://fonts.gstatic.com/s/alegreyasans/v8/WfiXipsmjqRqsDBQ1bA9CpQB2Vp4dijuI39VEkBaQks.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'), url(https://fonts.gstatic.com/s/alegreyasans/v8/KYNzioYhDai7mTMnx_gDgp7fs_z8nuqHYC6tC8rLl5s.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'), url(https://fonts.gstatic.com/s/alegreyasans/v8/11EDm-lum6tskJMBbdy9aSFcOIMZuYN7K3FRrJkYYms.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Alegreya Sans ExtraBold'), local('AlegreyaSans-ExtraBold'), url(https://fonts.gstatic.com/s/alegreyasans/v8/11EDm-lum6tskJMBbdy9aSsPtzGU7XgmiOMpkvc57q4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 html {
   font-size: 16px;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 .mobile {
@@ -10,7 +43,7 @@ html {
 
 h2 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 h4 {
@@ -18,12 +51,39 @@ h4 {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 470px) {
+a {
+  padding: 0.25rem;
+  background-color: hsla(0, 24.5%, 5%, 0.75);
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.35s linear 0.125s;
+}
+
+a:hover {
+  background-color: rgba(0, 17, 149, 0.65);
+}
+
+@media only screen and (max-width: 780px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .mobile {
     display: block;
   }
   .desktop {
     display: none;
+  }
+
+  h2 {
+    font-size: 2.5rem;
   }
   }
 
@@ -45,6 +105,10 @@ header {
   font-weight: bold;
 }
 
+.logo p {
+  font-family: "Times New Roman", serif;
+}
+
 .logo p span {
   font-weight: normal;
   color: hsla(0, 47%, 18.5%, 0.6);
@@ -59,46 +123,93 @@ nav ul li {
   padding-left: 1rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
 /*Banner Syle*/
 
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(91, 193, 242, 0.5);
 }
 
 .banner .image-container {
-  margin: 32px 24px;
+  margin: 2rem 1.5rem;
   width: 60%;
 }
 
 .banner .image-container img {
   width: 100%;
-  height: auto;
 }
 
 .claim {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 40%;
 }
 
 .claim h2 {
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
 }
 
-.claim .cta {
-  width: 55%;
+.claim p {
+  font-size: 1.25rem;
 }
 
-.claim .button {
-  margin-top: 24px;
-  padding: 8px 0;
-  width: 55%;
-  background-color: hsla(0, 24.5%, 5%, 0.75);
-  color: #FFF;
-  text-align: center;
+.claim a {
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+  width: 65%;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .claim p {
+    font-size: 1rem;
+  }
+
+  .claim a {
+    padding: 0.5rem 0;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .image-container {
+    width: 100%;
+  }
+
+  .claim {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .claim p {
+    width: 55%;
+  }
 }
 
 /*Information Section Style*/
@@ -110,8 +221,8 @@ nav ul li {
 }
 
 .information .image-container {
-  margin: 16px 24px;
-  padding: 16px 0;
+  margin: 1rem 1.5rem;
+  padding: 1rem 0;
   width: 60%;
 }
 
@@ -120,44 +231,86 @@ nav ul li {
 }
 
 .information .image-container h2 {
-  margin-top: 32px;
-  margin-bottom: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .information .image-container span {
   display: block;
-  margin: 32px 0;
+  margin: 2rem 0;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 .information .content {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .info {
   display: flex;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .info img {
   width: 35%;
   height: auto;
-  margin: 16px;
 }
 
 .info .text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0 1rem 0 1rem;
   width: 65%;
 }
 
 .info p {
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
+@media only screen and (max-width: 500px) {
+  .information .image-container {
+    display: none;
+  }
+
+  .information .content {
+    width: 100%;
+  }
+
+  .info .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .info .mobile {
+    margin: 1rem;
+  }
+
+  .info .mobile img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .info .text {
+    width: auto;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 
 /*Courses Section Style*/
 
@@ -165,42 +318,89 @@ nav ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  background-color: rgba(91, 193, 242, 0.5);
 }
 
 .courses h2 {
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 .courses-presentation {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  margin: 0 56px;
+  padding-bottom: 2rem;
+  margin: 0 3.5rem;
 }
 
 .course {
-  margin: 16px;
-  width: 30%;
-  height: 50%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  background-color: white;
+  padding-bottom: 2rem;
 }
 
 .course img {
   width: 100%;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
-.course span {
-  display: block;
-  margin: 8px 0;
+.course-content {
+  height: 100%;
+  padding-left: 0.5rem;
 }
 
 .course p {
-  margin-bottom: 24px;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .courses-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+  }
+
+  .course {
+    width: 100%;
+    margin: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  .course h4 {
+    background-color: #FFF;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    transition: all 0.35s linear 0.125s;
+  }
+
+  .course h4:hover {
+    background-color: rgba(0, 17, 149, 0.65);
+    color: #FFF;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course span {
+    display: none;
+  }
+
+  .course p {
+    display: none;
+  }
 }
 
 /*Thesis Section Style*/
@@ -225,7 +425,7 @@ nav ul li {
 
 .thesis .image-container {
   width: 60%;
-  padding: 1rem 0.5rem 2rem 1.5rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
 }
 
 .thesis .image-container video {
@@ -238,8 +438,28 @@ nav ul li {
   width: 40%;
 }
 
-.image-container h4 {
+.main .image-container h4 {
   margin: 2rem 0 1.5rem 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .thesis-presentation {
+    display: none;
+  }
+
+  .thesis .image-container {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .main .image-container h4 {
+    display: none;
+  }
+
+  .main .image-container p {
+    display: none;
+  }
 }
 
 /*Footer Style*/
@@ -248,6 +468,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1rem 2rem 1.5rem;
+  border-top: 1px solid rgba(0, 17, 149, 0.65);
 }
 
 .copyright {
@@ -262,4 +483,10 @@ footer ul {
 
 footer ul li {
   margin-left: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  footer ul {
+    display: none;
+  }
 }
